@@ -15,7 +15,7 @@ public class Druide {
 		+ effetPotionMax + ".");
 	}
 	
-	public void () {
+	public preparerPotion() {
 		
 	}
 	public String getNom() {
