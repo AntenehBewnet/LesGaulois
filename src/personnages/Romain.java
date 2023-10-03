@@ -1,9 +1,9 @@
 package personnages;
 
-public class Romains {
+public class Romain {
 	private String nom;
 	private int force;
-	public void Romain(String nom, int force) {
+	public Romain(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
 	}
@@ -18,12 +18,18 @@ public class Romains {
 	}
 	public void recevoirCoup(int forceCoup) {
 		force -= forceCoup;
-		if (force > 0) {
-			parler("Aïe");
+	if (force > 0) {
+		parler("Aïe");
 	} else {
 		parler("J'abandonne...");
 	}
 	}
-
+	@Override
+	public String toString() {
+		return "Romain [nom=" + nom + ", force=" + force + "]";
+	}
 
 }
+
+
+
