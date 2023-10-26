@@ -3,9 +3,15 @@ package personnages;
 public class Romain {
 	private String nom;
 	private int force;
+	private Equipement[] equipements = new Equipement[2];
+	private int nbEquipement = 0;
+	
+	
+	
 	public Romain(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
+		assert this.force > 0 : "La force doit etre positif";
 	}
 	public String getNom() {
 		return nom;
@@ -17,18 +23,77 @@ public class Romain {
 		return "Le romain " + nom + " : ";
 	}
 	public void recevoirCoup(int forceCoup) {
+		assert force > 0 : "la force d’un Romain est positive";
+		int temp = force; 
 		force -= forceCoup;
-	if (force > 0) {
-		parler("Aïe");
-	} else {
-		parler("J'abandonne...");
+		if (force > 0) {
+			parler("Aïe");
+		} else {
+			parler("J'abandonne...");
+		}
+		assert temp > force : "la force d’un Romain a diminué";
+		
 	}
+	
+	
+	public void sEquiper(Equipement equipement) {
+		switch (nbEquipement) {
+		case 2:
+			System.out.println("Le soldat Minus est déjà bien protégé !");
+			break;
+		case 1:
+			switch (equipement) {
+				case CASQUE: 
+					switch (equipements[0]) {
+						case CASQUE:
+							System.out.println("Le soldat Minus possède déjà un casque.");
+						break;
+						default:
+							nbEquipement += 1;
+							equipements[0] = Equipement.CASQUE;
+							System.out.println("Le soldat Minus s’équipe avec un casquejj." + equipements[0]);
+								break;
+					
+					}
+					default :
+						break;
+
+			}
+				
+			
+
+		case 0:				
+			nbEquipement += 1;
+			equipements[0] = Equipement.CASQUE;
+			System.out.println("00Le soldat Minus s’équipe avec un casque."+ equipements[0]);
+				break;
+				
+		default :
+			break;
+			
+			
+				
+		}
+			
+					
+		
+			
+	
+		
 	}
 	@Override
 	public String toString() {
 		return "Romain [nom=" + nom + ", force=" + force + "]";
 	}
 
+	
+	public static void main(String[] args) {
+		Romain minus = new Romain("Minus",6);
+		System.out.println(minus);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
+
+		}
 }
 
 

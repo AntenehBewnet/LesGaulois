@@ -50,7 +50,7 @@ public class Villages {
 		
 		Chef abraracourcix = new Chef("Abraracourcix",6,village);
 		Gaulois asterix = new Gaulois("Asterix",8);
-		Gaulois obelix = new Gaulois("Obelix",8);
+		Gaulois obelix = new Gaulois("Obelix",25);
 		village.ajouterHabitant(obelix);
 		village.ajouterHabitant(asterix);
 		/*Gaulois gaulois = village.trouverHabitant(1); */
