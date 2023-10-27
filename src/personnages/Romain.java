@@ -42,25 +42,6 @@ public class Romain {
 			System.out.println("Le soldat " + nom + " est déjà bien protégé !");
 			break;
 		case 1:
-<<<<<<< HEAD
-=======
-			switch (equipement) {
-				case CASQUE: 
-					switch (equipements[0]) {
-						case CASQUE:
-							System.out.println("Le soldat Minus possède déjà un casque.");
-						break;
-						default:
-							nbEquipement += 1;
-							equipements[0] = Equipement.CASQUE;
-							System.out.println("Le soldat Minus s’équipe avec un casquejj." + equipements[0]);
-								break;
-					
-					}
-					break;
-					default :
-						break;
->>>>>>> 8ff5ecba3134c86a83db351dc4885df303458e49
 
 					if (equipements[0] == equipement) {
 						System.out.println("Le soldat " + nom  + " possède déjà un " + equipement + "!");
@@ -118,12 +99,8 @@ public class Romain {
 		System.out.println(minus);
 		minus.sEquiper(Equipement.CASQUE);
 		minus.sEquiper(Equipement.CASQUE);
-<<<<<<< HEAD
 		minus.sEquiper(Equipement.BOUCLIER);
 		minus.sEquiper(Equipement.BOUCLIER);
-=======
-		minus.sEquiper(Equipement.CASQUE);
->>>>>>> 8ff5ecba3134c86a83db351dc4885df303458e49
 
 		}
 }
