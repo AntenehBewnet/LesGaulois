@@ -55,6 +55,7 @@ public class Romain {
 								break;
 					
 					}
+					break;
 					default :
 						break;
 
@@ -90,6 +91,7 @@ public class Romain {
 	public static void main(String[] args) {
 		Romain minus = new Romain("Minus",6);
 		System.out.println(minus);
+		minus.sEquiper(Equipement.CASQUE);
 		minus.sEquiper(Equipement.CASQUE);
 		minus.sEquiper(Equipement.CASQUE);
 
