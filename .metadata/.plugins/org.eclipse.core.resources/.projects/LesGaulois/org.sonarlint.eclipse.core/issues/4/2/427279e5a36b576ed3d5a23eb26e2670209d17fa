@@ -1,0 +1,10 @@
+
+d
+java:S1854."9Remove this useless assignment to local variable "minus".(êš¤ÅH%RMAJORZ
+CODE_SMELL
+U
+java:S1481."*Remove this unused "minus" local variable.(êš¤ÅH&RMINORZ
+CODE_SMELL
+„
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Ý©¤ÍøÿÿÿÿH(RMINORZ
+CODE_SMELL

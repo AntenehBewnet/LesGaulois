@@ -1,0 +1,14 @@
+
+`
+java:S4973 "<Strings and Boxed types should be compared using "equals()".(åË¶ðHRMAJORZBUG
+D
+java:S2119"Save and re-use this "Random".(¼ÝÅfH RCRITICALZBUG
+i
+java:S1117">Rename "forcePotion" which hides the field declared at line 8.(¥ÌŽÀH!RMAJORZ
+CODE_SMELL
+b
+java:S1854:"7Remove this useless assignment to local variable "yuh".(éáªðH"RMAJORZ
+CODE_SMELL
+S
+java:S1481:"(Remove this unused "yuh" local variable.(éáªðH#RMINORZ
+CODE_SMELL

@@ -1,0 +1,12 @@
+
+~
+java:S1450"SRemove the "chef" field and declare it as a local variable in the relevant methods.(€÷‚ãH+RMINORZ
+CODE_SMELL
+f	java:S1258"<This block of commented-out lines of code should be removed.(æÒÇ€H,RMAJORZ
+CODE_SMELL
+S
+java:S1068"(Remove this unused "chef" private field.(€÷‚ãH-RMAJORZ
+CODE_SMELL
+g
+java:S1068"7Remove this unused "nbVillageoisMaximum" private field.(’Ü†Ù¸ˇˇˇˇH/RMAJORZ
+CODE_SMELL

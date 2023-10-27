@@ -15,7 +15,9 @@ public enum Equipement {
 	public static void main(String[] args) {
 		Equipement[] equipements = new Equipement[2];
 		equipements[0] = CASQUE;
-		System.out.println(equipements[0]);
+		/*equipements[1] = BOUCLIER; */
+		
+		System.out.println(equipements[1]);
 	}
 }
 
